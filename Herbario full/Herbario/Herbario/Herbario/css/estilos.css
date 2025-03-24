@@ -1,0 +1,403 @@
+/* Estilos generales para el cuerpo del documento */
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    text-align: justify;
+
+}
+
+
+
+
+.encabezado {
+    background-color: #1e5b20;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 20px solid black;
+    width: 100%;
+    position: relative;
+}
+
+.logo-u {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%; /* Asegura que se separa de la izquierda */
+    margin-right: auto; /* Empuja el logo hacia la izquierda */
+} 
+.logo-u img {
+    width: 70px;
+    height: auto;
+}
+
+.logos-redes {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-right: 10px; /* Ajusta según sea necesario */
+    margin-right: 20px; /* Separa el logo de la derecha */
+
+}
+
+.logos-redes a img {
+    width: 30px;  /* Ajusta según lo necesario */
+    height: auto;
+}
+
+/* Contenedor del título en el encabezado */
+.titulo {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+.titulo h1 {
+    
+    text-align: center;
+    font-size: 2rem; 
+}
+
+.titulo h5 {
+    font-size: 1rem;
+    margin: 0; /* Quita los espacios entre ellos */
+    padding: 0; /* Elimina espacio interno */
+}
+
+.imagen-profe {
+    height: 50%;
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.profe-info {
+    text-align: center;
+}
+
+/* Contenedor de redes sociales */
+.redes {
+    display: flex;
+    gap: 10px;
+}
+
+.redes a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilos para el menú lateral */
+.menu {
+    background-color: #c8edcb;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu button {
+    background-color: #c8edcb;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background-color: #1e5b20;
+    color: white;
+}
+
+
+/* Las secciones deben estar inicialmente ocultas */
+.seccion {
+    display: none;
+}
+
+/* La sección activa debe estar visible */
+.activa {
+    display: block;
+}
+
+.segundo-div {
+    background-image: url('../logos/planta1.png');
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+    width: 10%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.tercer-div {
+    width: 100px;
+    padding: 10px;
+    margin-left: 12%;
+    position: relative;
+}
+
+.tercer-div button {
+    border: none;
+    cursor: pointer;
+    background: lightgreen;
+    font-size: 12px;
+    white-space: nowrap;
+    padding: 10px;
+    margin: 5px;
+}
+
+.tercer-div button:hover {
+    background: lightblue;
+}
+
+.principal {
+    padding: 10px; /* Reducido para móviles */
+    border-left: 2px solid rgb(99, 98, 98); /* Restaura el borde */
+    margin-left: 25%; /* Mantiene la separación del segundo-div */
+    
+}
+
+.cuarto-div {
+    padding: 10px; /* Reducido para móviles */
+    border-left: 2px solid rgb(99, 98, 98); /* Restaura el borde */
+    margin-left: 20%; /* Mantiene la separación del segundo-div */
+
+}
+
+.container-pie {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.pie-pagina {
+    background-color: #c8ebc8;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row; /* Asegura que los elementos se organicen en línea */
+    justify-content: space-between; /* Distribuye el contenido */
+    align-items: center; /* Centra verticalmente */
+    padding: 10px;
+}
+
+.pie-pagina p {
+    margin: 0;
+    padding: 0;
+    text-align:left; /* Centrado para móviles */
+}
+
+.container-pie {
+    flex: 1; /* Ocupa todo el espacio disponible */
+}
+
+
+.img-facultad {
+    text-align: center;
+
+}
+.img-facultad {
+    text-align: center; /* Centra la imagen dentro del div */
+}
+
+.img-facultad img {
+    width: 80%; /* Ajusta el ancho */
+    height: auto; /* Mantiene la proporción */
+}
+
+.encabezado img {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-H {
+    height: 150px; /* Ajusta según sea necesario */
+    width: auto; /* Mantiene la proporción */
+    margin-right: 20px; /* Separa el logo del borde derecho */
+}
+
+.iconos {
+    width: 30px;
+    height: 30px;
+}
+
+.mision-vision {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.mision, .vision {
+    width: 48%; /* Asegura que ambos ocupen el mismo espacio */
+    text-align: justify; /* Justifica el texto */
+}
+.mision h3, .vision h3 {
+    text-align: center;
+    color: green;
+    margin-bottom: 10px;
+}
+
+.Color-subTitulos {
+    color: green;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.objetivos-especificos {
+    padding: 20px;
+}
+
+.objetivos-especificos h3 {
+    color: darkgreen;
+}
+
+.contenedor-lista {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna {
+    width: 48%;
+    list-style: none;
+    padding-left: 0;
+}
+
+.columna li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.columna li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: black;
+    font-weight: bold;
+}
+
+/* Sección de la galería */
+.galeria {
+    text-align: center;
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Contenedor de imágenes en la galería */
+.imagenes {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Grupo de imágenes */
+.grupo {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Estilos para las imágenes en la galería */
+.grupo img {
+    width: 20%;
+    height: 90%;
+    border-radius: 5px;
+}
+
+/* Indicadores de la galería */
+.indicadores {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Estilos para los indicadores */
+.indicadores span {
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    background-color: #d1cdb1;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.indicadores .activo {
+    background-color: darkgreen;
+}
+
+@media (max-width: 700px) {
+    .logo-u {
+        width: 20%;
+        left: 10%;
+    }
+
+    .logos-redes {
+        right: 2px;
+    }
+    
+    .titulo h5 {
+        left: 28%;
+        font-size: 0.7rem; 
+
+    }
+    .titulo h1 {
+        font-size: 1rem; 
+    }
+    .imagen-profe {
+        width: 50%;
+    }
+
+    .principal {
+        margin-left: 25%;
+    }
+    
+    .pie-pagina {
+        flex-direction: row;
+    }
+
+    .imagenes {
+        flex-direction: row;
+    }
+    @media (max-width: 400px){
+        .menu {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .grupo {
+        flex-direction: row;
+    }
+
+    .grupo img {
+        width: 30%;
+    }
+}

@@ -1,0 +1,287 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; 
+
+}
+
+/* Estilo del encabezado principal */
+.encabezado {
+    background-color:   #1e5b20; /* Fondo verde */
+    color: white; /* Texto en blanco */
+    align-items: center; /* Alineación vertical centrada */
+    position: relative; /* Posición relativa para elementos internos */
+    border-top: 30px solid black; /* Borde negro superior */
+    margin: 0; /* Sin margen */
+}
+
+/* Contenedor del encabezado con diseño flexible */
+.contenedor-encabezado {
+    display: flex; /* Usa flexbox para disposición */
+    align-items: center; /* Alineación vertical centrada */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    justify-content: space-between; /* Distribución equitativa */
+}
+
+/* Estilo para el logo de la universidad */
+.logo-u {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    left: 10%;
+}
+/* Contenedor del título en el encabezado */
+.titulo {
+    text-align: center; /* Centrar texto */
+    flex-grow: 1; /* Ocupar el espacio restante */
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Alinear elementos en columna */
+}
+
+.titulo-h1 {
+    margin: 0;
+    text-align: center;
+}
+
+/* Estilo para el subtítulo */
+.titulo-h5 {
+    margin: 0; /* Sin margen */
+    font-size: 14px; /* Tamaño de letra reducido */
+    position: relative;
+    left: 26.3%; /* Ajusta posición */
+}
+
+
+
+/* Contenedor de redes sociales */
+.redes {
+    display: flex; /* Usa flexbox */
+    gap: 10px; /* Espaciado entre elementos */
+}
+
+.redes a img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Estilos para el menú lateral */
+.menu {
+    background-color: #c8edcb; /* Fondo verde claro */
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaciado entre los botones */
+}
+
+/* Estilos para los botones del menú */
+.menu button {
+    background-color: #c8edcb; /* Mismo color que el menú */
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #1e5b20; /* Borde verde oscuro */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto hover: cambia a verde más oscuro */
+.menu button:hover {
+    background-color: #1e5b20;
+    color: white;
+}
+
+
+
+/* Las secciones deben estar inicialmente ocultas */
+.seccion {
+    display: none; /* Ocultar todas las secciones */
+}
+
+/* La sección activa debe estar visible */
+.activa {
+    display: block;
+}
+
+.segundo-div {
+    background-image: url('../logos/planta1.png'); /* Verifica la ruta */
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+    width: 10%; /* Ajusta el ancho de los laterales */
+    min-height: 100vh; /* Se expande con el contenido */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.tercer-div {
+    width: 100px;
+    padding: 10px;
+    margin-left: 12%; /* Espaciado para que quede al lado del segundo div */
+    position: relative;
+}
+
+.tercer-div button {
+    border: none;
+    cursor: pointer;
+    background: lightgreen; /* Cambio a color verde claro */
+    font-size: 12px;
+    white-space: nowrap;
+    padding: 10px;
+    margin: 5px;
+
+}
+
+.tercer-div button:hover {
+    background: lightblue;
+}
+
+.cuarto-div {
+    padding: 20px;
+    border-left: 2px solid rgb(99, 98, 98); /* Línea de separación */
+
+}
+
+
+
+.principal {
+    padding: 20px;
+    margin-left: 25%;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+.pie-pagina {
+    background-color: #c8ebc8;
+    width: 100%;
+    max-width: 100%;
+  
+}
+
+.img-facultad{
+    text-align: center;
+    width: 80%;
+    height: auto;
+}
+
+.iconos{
+    width: 30px;
+    height: 30px;
+}
+
+.mision-vision {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+.mision h3, .vision h3 {
+    text-align: center;
+    color: green;
+    margin-bottom: 10px; /* Añade margen inferior para separar el título del texto */
+}
+
+.Color-subTitulos {
+    color: green;
+}
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.objetivos-especificos {
+    padding: 20px;
+}
+
+.objetivos-especificos h3 {
+    color: darkgreen;
+}
+
+.contenedor-lista {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna {
+    width: 48%;
+    list-style: none; /* Quitar el estilo predeterminado de la lista */
+    padding-left: 0;
+}
+
+.columna li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.columna li::before {
+    content: "•"; /* Agregar viñeta manualmente */
+    position: absolute;
+    left: 0;
+    color: black;
+    font-weight: bold;
+}
+
+/* Sección de la galería */
+.galeria {
+    text-align: center; /* Centrar contenido */
+    position: relative; /* Posición relativa */
+    max-width: 90%; /* Ancho máximo */
+    margin: auto; /* Centrar automáticamente */
+    overflow: hidden; /* Evitar desbordamiento */
+}
+
+/* Contenedor de imágenes en la galería */
+.imagenes {
+    display: flex; /* Usa flexbox */
+    transition: transform 0.5s ease-in-out; /* Animación de desplazamiento */
+}
+/* Grupo de imágenes */
+.grupo {
+    display: flex; /* Usa flexbox */
+    gap: 10px; /* Espaciado entre imágenes */
+    flex-shrink: 0; /* No reducir */
+    width: 100%; /* Ancho completo */
+    justify-content: center; /* Centrar imágenes */
+}
+
+/* Estilos para las imágenes en la galería */
+.grupo img {
+    width: 30%; /* Cada imagen ocupa un tercio del espacio */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Indicadores de la galería */
+.indicadores {
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centrar elementos */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+
+/* Estilos para los indicadores */
+.indicadores span {
+    width: 12px; /* Tamaño de los indicadores */
+    height: 12px;
+    margin: 5px;
+    background-color: #d1cdb1; /* Color base */
+    border-radius: 50%; /* Forma circular */
+    display: inline-block; /* Mostrar en línea */
+    cursor: pointer; /* Interacción con el cursor */
+}
+
+.indicadores .activo {
+    background-color: darkgreen;
+}
